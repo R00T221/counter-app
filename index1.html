@@ -1,0 +1,42 @@
+<!-- THIS FILE IS SAME AS INDEX BUT USED FOR SCRIPT1.JS WHERE WE USED EVENT LISTENER RATHER THAN ONCLICK.
+To make this file(index1) run with the tailwind,rename it to index.html so that vite could run it. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd-COUNTER APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- WRAPPER DIV -->
+<div class="w-[100vw] h-[100vh] flex flex-col justify-center items-center bg-[#344151] gap-10">
+<div class="text-[#0398d4] font-medium text-[20px]">Increment & Decrement</div>
+<!-- Buttons div -->
+<div class="flex bg-white text-[25px] text-[#344151] rounded-md gap-12 py-2 px-5">
+
+<!-- The "onclick" attribute is an HTML attribute used to specify JavaScript code that should be executed when an element is clicked. -->
+
+<!-- Negative Button -->
+<button id="negative" class="border-r-2 border-[#bfbfbf] pr-4">
+    <!-- Adding a minus icon -->
+    <i class="fa-solid fa-minus"></i>
+</button>
+
+<div id="counter" class="font-bold">0</div>
+
+<!-- Positive Button -->
+<button id="positive" class="border-l-2 border-[#bfbfbf] pl-4">
+<!-- Adding a plus icon -->
+<i class="fa-solid fa-plus"></i>
+</button>
+</div> <!--Buttons div Ends-->
+
+</div> <!--Wrapper div ends-->
+
+<!-- SCRIPT TO LINK FONT AWESOME FOR ICONS -->
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script src="script1.js"></script>
+</body>
+</html>
